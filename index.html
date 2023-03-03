@@ -1,53 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Calculator Made By Mr Kartik Barman</title>
-  <link rel="stylesheet" href="./css/style.css">
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Made By Mr Kartik</title>
+  <link rel="stylesheet" href="./css/style.css" /> 
 </head>
-  <body>
-    <h1><i>Calculator Made By Mr Kartik Barman</i></h1>
+<body>
+    <h1 style="text-align: center; color: blue;">Calculator Made By Mr Kartik Barman</h1>
     <div class="calculator_container content">
-        
-        <table>
-            <tr>
-                <td colspan="4"><input type="text" class="dsp" id="myResult" placeholder="Calculator Made Mr Kartik"></td>
-            </tr>
-    <tr>
-        <td> <button class="btn" type="button" value="AC" onclick="DeleteMe()"> AC </button></td>
-        <td> <button class="btn" type="button" value="(" onclick="calculator( '(' )"> ( </button>  </td>
-        <td> <button class="btn" type="button" value=")" onclick="calculator(')')"> ) </button>  </td>
-        <td> <button class="btn" type="button" value="%" onclick="calculator('%')"> % </button>  </td>
+    <table>
+        <tr>
+          <td colspan="4"><input type="text" class="dsp" id="myResults" placeholder="Calculator Made By Mr Kartik"></td>  
+        </tr>
+        <tr>
+           <td><button class="btn" type="button" onclick="DeleteMe()">AC</button></td>
+        <td><button class="btn" type="button" onclick="calculator('/')">÷</button></td>
+            <td><button class="btn" type="button" onclick="calculator('%')">%</button></td>
+            <td><button class="btn" type="button" onclick="backSpace()">⌫</button></td>
+        </tr> 
+        <tr>
+            <td><button class="btn" type="button" onclick="calculator('7')">7</button></td>
+            <td><button class="btn" type="button" onclick="calculator('8')">8</button></td>
+            <td><button class="btn" type="button" onclick="calculator('9')">9</button></td>
+            <td><button class="btn1" type="button" onclick="calculator('*')">x</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" type="button" onclick="calculator('4')">4</button></td>
+            <td><button class="btn" type="button" onclick="calculator('5')">5</button></td>
+            <td><button class="btn" type="button" onclick="calculator('6')">6</button></td>
+            <td><button class="btn2" type="button" onclick="calculator('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" type="button" onclick="calculator('1')">1</button></td>
+            <td><button class="btn" type="button" onclick="calculator('2')">2</button></td>
+            <td><button class="btn" type="button" onclick="calculator('3')">3</button></td>
+            <td><button class="btn3" type="button" onclick="calculator('+')">+</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button class="btn4" type="button" onclick="calculator('0')">0</button></td>
+        <td>
+            <button class="btn" type="button" onclick="calculator('.')">.</button>
+        </td>
+        <td>
+            <button class="btn5" type="button" onclick="answer()">=</button>
+        </td>
     </tr>
-    <tr>
-        <td> <button class="btn" type="button" value="7" onclick="calculator('7')"> 7 </button>  </td>
-        <td> <button class="btn" type="button" value="8" onclick="calculator('8')"> 8 </button>  </td>
-        <td> <button class="btn" type="button" value="9" onclick="calculator('9')"> 9 </button>  </td>
-        <td> <button class="btn" type="button" value="+" onclick="calculator('+')"> + </button>  </td>
-    </tr>
-    <tr>
-        <td> <button class="btn" type="button" value="4" onclick="calculator('4')"> 4 </button>  </td>
-        <td> <button class="btn" type="button" value="5" onclick="calculator('5')"> 5 </button>  </td>
-        <td> <button class="btn" type="button" value="6" onclick="calculator('6')"> 6 </button>  </td>
-        <td> <button class="btn" type="button" value="-" onclick="calculator('-')"> - </button>  </td>
-    </tr>
-    <tr>
-        <td> <button class="btn" type="button" value="1" onclick="calculator('1')"> 1 </button>  </td>
-        <td>  <button class="btn" type="button" value="2" onclick="calculator('2')"> 2 </button>  </td>
-        <td>  <button class="btn" type="button" value="3" onclick="calculator('3')"> 3 </button>  </td>
-        <td>  <button class="btn" type="button" value="*" onclick="calculator('*')"> * </button>  </td>
-    </tr>
-    <tr>
-        <td> <button class="btn" type="button" value="0" onclick="calculator('0')"> 0 </button>  </td>
-        <td> <button class="btn" type="button" value="." onclick="calculator('.')"> . </button>  </td>
-        <td> <button class="btn" type="button" value="/" onclick="calculator('/')"> / </button>  </td>
-        <td> <button class="btn" type="button" value="=" onclick="answer()">=</td>
-            </tr>
-        </table>
-    </div>
-  
-  
-  
-  
-  <script src="./js/main.js"></script>
+    </table>
+</div>
+  <script src="./js/main.js">     
+  </script>
 </body>
-  </html>
+</html>
